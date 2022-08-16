@@ -233,6 +233,7 @@ const Billing = ({ setShown, setShowing }) => {
           >
             <Button
               onClick={() => {
+                setShown(false);
                 setShowing(true);
               }}
               className="btn-md"

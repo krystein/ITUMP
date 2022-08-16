@@ -151,6 +151,7 @@ const Appointment = ({ setShow, setShown }) => {
         <div style={{ display: "flex", justifyContent: "center" }}>
           <Button
             onClick={() => {
+              setShow(false);
               setShown(true);
             }}
             className="btn-md mb-3"
