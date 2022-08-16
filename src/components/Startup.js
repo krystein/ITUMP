@@ -7,6 +7,8 @@ import "../pages/calendar.css";
 import Appointment from "../pages/Appointment";
 import Congratulations from "../pages/Congratulations";
 import Billing from "../pages/Billing";
+import Img1 from "../img/Arrow.svg";
+import Img2 from "../img/Vector.svg";
 
 const Startup = () => {
   const [show, setShow] = useState(false);
@@ -19,6 +21,10 @@ const Startup = () => {
           <div className="col mb-3">
             <div>
               <h6 style={{ color: "#e53f70", paddingLeft: "30px" }}>Startup</h6>
+              <div style={{ display: "flex" }}>
+                <img src={Img1} alt="" />
+                <img src={Img2} alt="" />
+              </div>
             </div>
             <div
               className="container"

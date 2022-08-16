@@ -4,6 +4,8 @@ import { Container, Row } from "react-bootstrap";
 import { IoHardwareChipOutline } from "react-icons/io5";
 import { GiProtectionGlasses } from "react-icons/gi";
 import { GoCreditCard } from "react-icons/go";
+import Img1 from "../img/Arrow.svg";
+import Img2 from "../img/Vector.svg";
 
 const Section = () => {
   return (
@@ -13,6 +15,10 @@ const Section = () => {
         style={{ backgroundColor: "#fff" }}
       >
         <h6 style={{ color: "#e53f70", paddingLeft: "1rem" }}>How It Works</h6>
+        <div style={{ display: "flex" }}>
+          <img src={Img1} alt="" />
+          <img src={Img2} alt="" />
+        </div>
         <div className="container">
           <Row style={{ gap: "20px" }}>
             <div className="col">

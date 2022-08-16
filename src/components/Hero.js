@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Img from "../img/Rectangle-55.png";
 import styled from "styled-components";
+import Img1 from "../img/Arrow.svg";
+import Img2 from "../img/Vector.svg";
 
 const Herosection = styled.section`
   height: 50vh;
@@ -85,6 +87,10 @@ const Hero = () => {
         <HeroSlide>
           <Herocontent>
             <h6 style={{ color: "#e53f70" }}>Build New Apps</h6>
+            <div style={{ display: "flex" }}>
+              <img src={Img1} alt="" />
+              <img src={Img2} alt="" />
+            </div>
             <h1>
               Find A <span style={{ color: "#ffb34e" }}>Better Solution </span>
               <br />

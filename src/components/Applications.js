@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Row } from "react-bootstrap";
 import { GiProtectionGlasses } from "react-icons/gi";
+import Img1 from "../img/Arrow.svg";
+import Img2 from "../img/Vector.svg";
 
 const Applications = () => {
   return (
@@ -9,6 +11,10 @@ const Applications = () => {
       <section className="container text-center mt-5 mb-5 p-5">
         <div>
           <h6 style={{ color: "#e53f70" }}>How It Works</h6>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <img src={Img1} alt="" />
+            <img src={Img2} alt="" />
+          </div>
         </div>
         <div className="p-3">
           <h1>
