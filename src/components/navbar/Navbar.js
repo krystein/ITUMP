@@ -71,9 +71,6 @@ const NavBtn = styled.div`
   align-items: center;
   margin-right: 50px;
   gap: 20px;
-  a {
-    text-decoration: none;
-  }
   button {
     background-color: transparent;
     border: 2px solid #e53f70;
@@ -142,9 +139,7 @@ const Navbar = ({ toggle }) => {
           })}
         </NavMenu>
         <NavBtn>
-          <a href="#">
-            <button>Sign in</button>
-          </a>
+          <button>Sign in</button>
         </NavBtn>
       </div>
     </nav>
