@@ -4,6 +4,8 @@ import React from "react";
 import styled from "styled-components";
 import Image1 from "../img/telephone.png";
 import Image2 from "../img/Email.svg";
+import Img from "../img/Itump.png";
+import Img1 from "../img/logo.png";
 import { BsYoutube, BsPinterest } from "react-icons/bs";
 import { AiTwotoneHome } from "react-icons/ai";
 import { MdPhoneInTalk } from "react-icons/md";
@@ -121,12 +123,7 @@ const Footerpage3 = styled.div`
     color: #fff;
   }
 `;
-const Logo = styled.div`
-  padding: 10px;
-  img {
-    width: 50px;
-  }
-`;
+
 const Social = styled.div`
   button {
     background: transparent;
@@ -161,7 +158,11 @@ const Footer = () => {
     <FooterContainer>
       <Footercontent>
         <Footerpage3>
-          <Logo to="/">ITUMP</Logo>
+          <div className="d-flex mb-3" style={{ gap: "10px" }}>
+            <img src={Img} alt="" className="img-fluid" width="100" />
+            <img src={Img1} alt="" className="img-fluid" width="100" />
+          </div>
+
           <h6 style={{ lineHeight: "1.5rem" }}>
             World's Most Inventive FinTech/B-Tech Service Platform for the Next-
             Gen of Innovative Businesses and Startups. ITUMP INC Brings Decades

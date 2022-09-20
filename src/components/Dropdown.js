@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //import components
 import styled from "styled-components";
@@ -9,12 +10,12 @@ const DropdownContainer = styled.div`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 100vh;
-  background: #08111c;
+  height: 70vh;
+  background: #002e5d;
   display: grid;
   align-items: center;
-  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
-  right: 0;
+  top: ${({ isOpen }) => (isOpen ? "0" : "-110%")};
+  bottom: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
 `;
@@ -35,14 +36,14 @@ const DropdownMenu = styled.div`
   display: grid;
   grid-gap: 10px;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 `;
 
 const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
 
-const DropdownLink = styled.a`
+const DropdownLink = styled.div`
   display: flex;
   color: #fff;
   align-items: center;
@@ -60,25 +61,32 @@ const DropdownLink = styled.a`
   }
 `;
 
-const BtnWarp = styled.div`
-  display: grid;
-  grid-gap: 20px;
-  margin-top: 50px;
-  justify-item: center;
+const NavBtn = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   button {
-    background-color: #e7c482;
-    border: none;
-    border-radius: 0px 10px 8px 10px;
-    font-size: 1.2rem;
-    font-family: inter, sans-serif;
-    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid #e53f70;
+    border-radius: 20px;
     height: 50px;
-    width: 200px;
-    color: #fff;
-  }
-  .btn {
-    display: flex;
-    justify-content: center;
+    width: 150px;
+    color: #e53f70;
+    font-family: Share Tech;
+    font-size: 18px;
+    font-weight: 400;
+    user-select: none;
+    -webkit-transition: color 0.15s ease-in-out,
+      background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:hover {
+      background: #e53f70;
+      transform: scale(1.05);
+      border: #e53f70;
+      color: #fff;
+    }
   }
 `;
 
@@ -92,19 +100,17 @@ const Dropdown = ({ isOpen, toggle }) => {
         <DropdownMenu>
           {menuData.map((item, index) => {
             return (
-              <DropdownLink href={item.link} key={index}>
-                {item.title} <FaGreaterThan />
-              </DropdownLink>
+              <Link to={item.link} style={{ textDecoration: "none" }}>
+                <DropdownLink key={index} onClick={toggle}>
+                  {item.title} <FaGreaterThan style={{ fontSize: "14px" }} />
+                </DropdownLink>
+              </Link>
             );
           })}
         </DropdownMenu>
-        <BtnWarp>
-          <div className="btn">
-            <a href="/Openaccount">
-              <button>Sign up</button>
-            </a>
-          </div>
-        </BtnWarp>
+        <NavBtn>
+          <button>Sign in</button>
+        </NavBtn>
       </DropdownWrapper>
     </DropdownContainer>
   );

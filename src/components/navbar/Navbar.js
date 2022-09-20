@@ -1,30 +1,31 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 //import components
+import "bootstrap/dist/css/bootstrap.min.css";
 import styled from "styled-components";
 import { menuData } from "../../data/MenuData";
 import { FaBars } from "react-icons/fa";
+import Img1 from "../../img/logo.png";
 import "./navbar.css";
 
-const Logo = styled.a`
-color: #fff;
-display: flex;
-align-items: center;
-padding: 0 1rem;
-font-size: 1.5rem;
-font-family: inter, sans-serif;
-height: 100%
-cursor: pointer;
-text-decoration: none;
-h1{
-  &:hover {
-    color: #e53f70;
-    transform: scale(1.05);
-  }
-  font-size: clamp(1.8rem, 8vw, 1.2rem);
+const Logo = styled.div`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-family: inter, sans-serif;
+  height: 100%;
   cursor: pointer;
+  text-decoration: none;
+  h1 {
+    &:hover {
+      color: #e53f70;
+      transform: scale(1.05);
+    }
+    font-size: clamp(1rem, 8vw, 1.2rem);
+    cursor: pointer;
   }
-
 `;
 
 const MenuBar = styled(FaBars)`
@@ -69,8 +70,6 @@ text-decoration: none;
 const NavBtn = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 50px;
-  gap: 20px;
   button {
     background-color: transparent;
     border: 2px solid #e53f70;
@@ -123,12 +122,13 @@ const Navbar = ({ toggle }) => {
   window.addEventListener("scroll", changeNavbarColor);
   return (
     <nav className={colorChange ? "Itump active" : "Itump"}>
-      <Logo href="/">
-        <img src="" alt="" />
-        <h1>ITUMP</h1>
-      </Logo>
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <Logo>
+          <img src={Img1} alt="" className="img-fluid" width="150" />
+        </Logo>
+      </Link>
       <MenuBar onClick={toggle} />
-      <div style={{ display: "flex" }}>
+      <div className="mx-5" style={{ display: "flex", gap: "50px" }}>
         <NavMenu>
           {menuData.map((item, index) => {
             return (

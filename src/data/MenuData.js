@@ -1,8 +1,8 @@
 export const menuData = [
   { title: "Home", link: "/#Home" },
-  { title: "Pay with Itump", link: "/#Pay_with_Itump" },
-  { title: "Business", link: "/#Business" },
-  { title: "Developers", link: "/#Develpers" },
-  { title: "Company", link: "/#Company" },
-  { title: "Support", link: "/Support" },
+  { title: "Services", link: "/#Services" },
+  { title: "Portfolio", link: "/#Business" },
+  { title: "Process", link: "/#Developers" },
+  { title: "Get Started", link: "/#Company" },
+  { title: "Testimonial", link: "/#Testimonial" },
 ];

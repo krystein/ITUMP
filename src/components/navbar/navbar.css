@@ -8,6 +8,8 @@
   top: 0;
   position: fixed;
   width: 100%;
+  align-items: center;
+  backdrop-filter: blur(20px);
 }
 @media (max-width: 1200px) {
   .Itump {
@@ -16,5 +18,5 @@
   }
 }
 .active {
-  background-color: #02132f;
+  background-color: #002e5d;
 }
