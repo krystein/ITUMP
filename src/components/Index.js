@@ -2,10 +2,10 @@ import React from "react";
 import Hero from "./Hero";
 import styled from "styled-components";
 import Section from "./Section";
-import Startup from "./Startup";
 import Project from "./Projects/Projects";
 import Applications from "./Applications";
 import Card from "./Card";
+import Testimonial from "./Testimonial";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 const Indexcontainer = styled.section`
   padding-top: 0px;
@@ -21,7 +21,7 @@ const Index = () => {
       </AnimationOnScroll>
       <Project />
       <Applications />
-      <Startup />
+      <Testimonial />
     </Indexcontainer>
   );
 };

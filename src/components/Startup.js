@@ -7,8 +7,7 @@ import "../pages/calendar.css";
 import Appointment from "../pages/Appointment";
 import Congratulations from "../pages/Congratulations";
 import Billing from "../pages/Billing";
-import Img1 from "../img/Arrow.svg";
-import Img2 from "../img/Vector.svg";
+import Img1 from "../img/ellispe.png";
 
 const Startup = () => {
   const [show, setShow] = useState(false);
@@ -23,7 +22,6 @@ const Startup = () => {
               <h6 style={{ color: "#e53f70", paddingLeft: "30px" }}>Startup</h6>
               <div style={{ display: "flex" }}>
                 <img src={Img1} alt="" />
-                <img src={Img2} alt="" />
               </div>
             </div>
             <div
@@ -108,18 +106,18 @@ const Startup = () => {
                     </Form.Group>
                   </Col>
                   <Col>
-                    <Form.Group>
+                    <Form.Group style={{ display: "grid" }}>
                       <Form.Label style={{ color: "#979797" }}>
                         Address
                       </Form.Label>
-                      <Form.Control
-                        type="text"
+                      <textarea
                         style={{
                           backgroundColor: "#f7f9fc",
                           border: "none",
                           height: "120px",
+                          padding: "10px",
                         }}
-                      />
+                      ></textarea>
                     </Form.Group>
                   </Col>
                   <h6 className="mt-4 mb-2" style={{ fontWeight: "800" }}>
