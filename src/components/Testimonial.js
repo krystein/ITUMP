@@ -12,6 +12,7 @@ const Testimonial = () => {
     <div
       className="align-items-center"
       style={{ position: "relative", height: "100vh" }}
+      id="Testimonial"
     >
       <img
         src={Img4}
@@ -30,8 +31,17 @@ const Testimonial = () => {
           alignItems: "center",
         }}
       >
-        <div className="row" style={{ gap: "20px" }}>
-          <div className="card col-lg col-sm col-md p-3">
+        <div className="row" style={{ gap: "30px" }}>
+          <div
+            className="col-lg col-sm col-md p-3"
+            style={{
+              backgroundColor: "#fff",
+              border: "1px solid rgba(217, 217, 217, 0.5)",
+              boxShadow: "0.25rem 0.25rem 3.38rem rgba(217, 217, 217, 0.5)",
+              transform: "scale(1.05)",
+              borderRadius: "10px",
+            }}
+          >
             <div>
               <img src={star} alt="" className="img-fluid" />
             </div>
@@ -42,23 +52,32 @@ const Testimonial = () => {
             <div className="d-flex">
               <img src={Img2} alt="" />
               <div>
-                <h4>Fidelis C.</h4>
+                <h6>Fidelis C.</h6>
                 <h6>CEO, FIxtops Technologies</h6>
               </div>
             </div>
           </div>
-          <div className="card col-lg col-sm col-md p-3">
+          <div
+            className=" col-lg col-sm col-md p-3"
+            style={{
+              backgroundColor: "#fff",
+              border: "1px solid rgba(217, 217, 217, 0.5)",
+              boxShadow: "0.25rem 0.25rem 3.38rem rgba(217, 217, 217, 0.5)",
+              transform: "scale(1.05)",
+              borderRadius: "10px",
+            }}
+          >
             <div>
               <img src={star} alt="" className="img-fluid" />
             </div>
-            <p>
+            <p style={{ fontSize: "15px" }}>
               Blue Kanel HQ is one company that I can totally rely on when it
               comes to creating and maintaining our software. easy team!
             </p>
             <div className="d-flex">
               <img src={Img3} alt="" />
               <div>
-                <h4>Fidelis C.</h4>
+                <h6>Fidelis C.</h6>
                 <h6>CEO, FIxtops Technologies</h6>
               </div>
             </div>

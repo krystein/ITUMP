@@ -8,13 +8,18 @@ import Appointment from "../pages/Appointment";
 import Congratulations from "../pages/Congratulations";
 import Billing from "../pages/Billing";
 import Img1 from "../img/ellispe.png";
+import { Link } from "react-router-dom";
 
 const Startup = () => {
   const [show, setShow] = useState(false);
   const [showing, setShowing] = useState(false);
   const [shown, setShown] = useState(false);
   return (
-    <Container className="mb-5 pb-5" style={{ paddingTop: "80px" }}>
+    <Container
+      className="mb-5 pb-5"
+      style={{ paddingTop: "80px" }}
+      id="Getstarted"
+    >
       <div className="container">
         <div className="row">
           <div className="col mb-3">
@@ -108,7 +113,7 @@ const Startup = () => {
                   <Col>
                     <Form.Group style={{ display: "grid" }}>
                       <Form.Label style={{ color: "#979797" }}>
-                        Address
+                        Tell us briefly about your app
                       </Form.Label>
                       <textarea
                         style={{
@@ -120,7 +125,26 @@ const Startup = () => {
                       ></textarea>
                     </Form.Group>
                   </Col>
-                  <h6 className="mt-4 mb-2" style={{ fontWeight: "800" }}>
+                  <h6
+                    className="mt-4 mb-2"
+                    style={{ fontWeight: "500", color: "#979797" }}
+                  >
+                    We are bound by our standard Non-Disclosure Agreement, which
+                    helps to protect your proprietary ideas from being disclosed
+                    by our team or anyone in our circle.
+                  </h6>
+                  <Link to="/" style={{ textDecorationColor: "#e53f70" }}>
+                    <h6
+                      className="mt-4 mb-2"
+                      style={{ fontWeight: "500", color: "#e53f70" }}
+                    >
+                      Download A Copy
+                    </h6>
+                  </Link>
+                  <h6
+                    className="mt-4 mb-2"
+                    style={{ fontWeight: "800", color: "#979797" }}
+                  >
                     What are we building today?
                   </h6>
                   <Row>

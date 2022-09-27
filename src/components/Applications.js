@@ -22,6 +22,7 @@ const Applications = () => {
         style={{
           backgroundColor: "rgb(220, 227, 231)",
         }}
+        id="Process"
       >
         <section className="container text-center mt-5 p-5">
           <div>

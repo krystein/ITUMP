@@ -7,6 +7,7 @@ import { menuData } from "../../data/MenuData";
 import { FaBars } from "react-icons/fa";
 import Img1 from "../../img/logo.png";
 import "./navbar.css";
+import Registration from "../../pages/Registration";
 
 const Logo = styled.div`
   color: #fff;
@@ -111,6 +112,7 @@ const NavBtn = styled.div`
 `;
 
 const Navbar = ({ toggle }) => {
+  const [show, setShow] = useState(false);
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -121,28 +123,35 @@ const Navbar = ({ toggle }) => {
   };
   window.addEventListener("scroll", changeNavbarColor);
   return (
-    <nav className={colorChange ? "Itump active" : "Itump"}>
-      <Link to="/" style={{ textDecoration: "none" }}>
-        <Logo>
-          <img src={Img1} alt="" className="img-fluid" width="150" />
-        </Logo>
-      </Link>
-      <MenuBar onClick={toggle} />
-      <div className="mx-5" style={{ display: "flex", gap: "50px" }}>
-        <NavMenu>
-          {menuData.map((item, index) => {
-            return (
-              <NavMenuLink href={item.link} key={index}>
-                {item.title}
-              </NavMenuLink>
-            );
-          })}
-        </NavMenu>
-        <NavBtn>
-          <button>Sign in</button>
-        </NavBtn>
-      </div>
-    </nav>
+    <>
+      <nav className={colorChange ? "Itump active" : "Itump"}>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <Logo>
+            <img src={Img1} alt="" className="img-fluid" width="150" />
+          </Logo>
+        </Link>
+        <MenuBar onClick={toggle} />
+        <div className="mx-5" style={{ display: "flex", gap: "50px" }}>
+          <NavMenu>
+            {menuData.map((item, index) => {
+              return (
+                <NavMenuLink href={item.link} key={index}>
+                  {item.title}
+                </NavMenuLink>
+              );
+            })}
+          </NavMenu>
+          <NavBtn
+            onClick={() => {
+              setShow(true);
+            }}
+          >
+            <button>Sign in</button>
+          </NavBtn>
+        </div>
+      </nav>
+      {show && <Registration setShow={setShow} />}
+    </>
   );
 };
 

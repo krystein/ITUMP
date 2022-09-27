@@ -176,7 +176,7 @@ const Billing = ({ setShown, setShowing }) => {
         <Form>
           <Row className="mb-2">
             <Form.Group>
-              <Form.Label style={{ fontWeight: "500" }}>
+              <Form.Label style={{ fontWeight: "500", color: "#9CA3AC" }}>
                 CardHolder Name
               </Form.Label>
               <Form.Control
@@ -190,7 +190,9 @@ const Billing = ({ setShown, setShowing }) => {
           </Row>
           <Row className="mb-2">
             <Form.Group>
-              <Form.Label style={{ fontWeight: "500" }}>Card Number</Form.Label>
+              <Form.Label style={{ fontWeight: "500", color: "#9CA3AC" }}>
+                Card Number
+              </Form.Label>
               <Form.Control
                 type="number"
                 className=""
@@ -204,7 +206,9 @@ const Billing = ({ setShown, setShowing }) => {
           <Row>
             <Col>
               <Form.Group>
-                <Form.Label style={{ fontWeight: "500" }}>Date</Form.Label>
+                <Form.Label style={{ fontWeight: "500", color: "#9CA3AC" }}>
+                  Date
+                </Form.Label>
                 <Form.Control
                   type="date"
                   style={{
@@ -216,7 +220,9 @@ const Billing = ({ setShown, setShowing }) => {
             </Col>
             <Col>
               <Form.Group>
-                <Form.Label style={{ fontWeight: "500" }}>CVV</Form.Label>
+                <Form.Label style={{ fontWeight: "500", color: "#9CA3AC" }}>
+                  CVV
+                </Form.Label>
                 <Form.Control
                   type="number"
                   style={{

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 //import components
 import styled from "styled-components";
@@ -43,7 +42,7 @@ const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
 
-const DropdownLink = styled.div`
+const DropdownLink = styled.a`
   display: flex;
   color: #fff;
   align-items: center;
@@ -100,11 +99,9 @@ const Dropdown = ({ isOpen, toggle }) => {
         <DropdownMenu>
           {menuData.map((item, index) => {
             return (
-              <Link to={item.link} style={{ textDecoration: "none" }}>
-                <DropdownLink key={index} onClick={toggle}>
-                  {item.title} <FaGreaterThan style={{ fontSize: "14px" }} />
-                </DropdownLink>
-              </Link>
+              <DropdownLink href={item.link} key={index} onClick={toggle}>
+                {item.title} <FaGreaterThan style={{ fontSize: "14px" }} />
+              </DropdownLink>
             );
           })}
         </DropdownMenu>

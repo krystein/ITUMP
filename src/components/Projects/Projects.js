@@ -11,7 +11,7 @@ import "./projects.css";
 
 const Project = () => {
   return (
-    <section className="container text-center mt-5 mb-5">
+    <section className="container text-center mt-5 mb-5 p-5" id="Portfolio">
       <div>
         <h6 style={{ color: "#e53f70" }}>Projects</h6>
         <div style={{ display: "flex", justifyContent: "center" }}>
