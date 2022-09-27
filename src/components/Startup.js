@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Form, Row, Button, Col } from "react-bootstrap";
 import { IoArrowForward } from "react-icons/io5";
-import Image from "../img/Contact.PNG";
+import Image from "../img/Group12.png";
 import "../pages/calendar.css";
 import Appointment from "../pages/Appointment";
 import Congratulations from "../pages/Congratulations";
@@ -24,24 +24,33 @@ const Startup = () => {
         <div className="row">
           <div className="col mb-3">
             <div>
-              <h6 style={{ color: "#e53f70", paddingLeft: "30px" }}>Startup</h6>
+              <h6 style={{ color: "#e53f70" }}>Startup</h6>
               <div style={{ display: "flex" }}>
                 <img src={Img1} alt="" />
               </div>
             </div>
             <div
-              className="container"
+              className=""
               style={{
                 width: "500px",
                 maxWidth: "100%",
                 lineHeight: "1.125em",
               }}
             >
-              <h1 style={{ fontWeight: "800" }}>
+              <h1 className="mt-4" style={{ fontWeight: "800" }}>
                 Lets Scale Your <br />
                 <span style={{ color: "#ffb34e" }}>Startup, Together</span>
               </h1>
-              <img src={Image} alt="" className="img img-fluid" />
+              <h6
+                className="mt-4 mb-5"
+                style={{ fontWeight: "500", color: "#979797" }}
+              >
+                Get Approved for up to $50,000.00 seed injection into your tech
+                project investment when you apply for our Tech Asset Management
+                program. Continue with a consultation to discover the best
+                method to launching your tech project in weeks.
+              </h6>
+              <img src={Image} alt="" className="img-fluid" />
             </div>
           </div>
           <div className="container mb-3 col">
