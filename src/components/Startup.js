@@ -141,6 +141,41 @@ const Startup = () => {
                       Download A Copy
                     </h6>
                   </Link>
+                  <Row className="mt-2">
+                    <Form.Group
+                      className="d-flex align-items-baseline justify-content-flex-start"
+                      style={{ gap: "10px" }}
+                    >
+                      <input
+                        type="checkbox"
+                        required
+                        style={{ accentColor: "#e74e7b" }}
+                      />
+                      <Form.Label
+                        style={{ fontWeight: "500", color: "#9CA3AC" }}
+                      >
+                        Check this button to agree to the terms of the NDA which
+                        protects your idea.
+                      </Form.Label>
+                    </Form.Group>
+                  </Row>
+                  <Row className="">
+                    <Form.Group
+                      className="d-flex align-items-baseline justify-content-flex-start"
+                      style={{ gap: "10px" }}
+                    >
+                      <input
+                        type="checkbox"
+                        required
+                        style={{ accentColor: "#e74e7b" }}
+                      />
+                      <Form.Label
+                        style={{ fontWeight: "500", color: "#9CA3AC" }}
+                      >
+                        Check this button to agree to our terms of Service.
+                      </Form.Label>
+                    </Form.Group>
+                  </Row>
                   <h6
                     className="mt-4 mb-2"
                     style={{ fontWeight: "800", color: "#979797" }}
@@ -150,17 +185,29 @@ const Startup = () => {
                   <Row>
                     <Col>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">AI Tech</label>
                       </div>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">
                           Crypto Blockchain
                         </label>
                       </div>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">
                           Mobile Technologies
                         </label>
@@ -168,17 +215,29 @@ const Startup = () => {
                     </Col>
                     <Col>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">VR Tech</label>
                       </div>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">
                           PWA Services
                         </label>
                       </div>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">
                           Embedded Systems
                         </label>
@@ -186,13 +245,21 @@ const Startup = () => {
                     </Col>
                     <Col>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">
                           NFT Platforms
                         </label>
                       </div>
                       <div className="form-check form-check-inline">
-                        <input type="checkbox" className="form-check-input" />
+                        <input
+                          type="checkbox"
+                          className="form-check-input"
+                          style={{ accentColor: "red" }}
+                        />
                         <label className="form-check-label h6">
                           ML/Data System
                         </label>
