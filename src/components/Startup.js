@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Form, Row, Button, Col } from "react-bootstrap";
 import { IoArrowForward } from "react-icons/io5";
 import Image from "../img/Group12.png";
-import "../pages/calendar.css";
-import Appointment from "../pages/Appointment";
-import Congratulations from "../pages/Congratulations";
-import Billing from "../pages/Billing";
+import "../pages/Pop-up/calendar.css";
+import Appointment from "../pages/Pop-up/Appointment";
+import Congratulations from "../pages/Pop-up/Congratulations";
+import Billing from "../pages/Pop-up/Billing";
 import Img1 from "../img/ellispe.png";
 import { Link } from "react-router-dom";
 

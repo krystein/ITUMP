@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Button, Row } from "react-bootstrap";
 import { AiFillAndroid, AiFillCloseCircle } from "react-icons/ai";
 import { IoCopy } from "react-icons/io5";
-import Img from "../img/celebrate.PNG";
+import Img from "../../img/celebrate.PNG";
 import { BsApple } from "react-icons/bs";
 const css = `
   .bg{

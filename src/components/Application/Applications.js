@@ -1,17 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Startup from "./Startup";
+import Startup from "../Startup";
 import { IoArrowForward } from "react-icons/io5";
 import { Row, Button } from "react-bootstrap";
-import Img1 from "../img/ellispe.png";
-import Img2 from "../img/search-1.svg";
-import Img3 from "../img/computer.svg";
-import Img6 from "../img/ui.svg";
-import Img5 from "../img/setting.svg";
-import Img4 from "../img/search-2.svg";
-import Img7 from "../img/phone.svg";
-import Img8 from "../img/deployment.svg";
-import Img9 from "../img/circle.svg";
+import Img1 from "../../img/ellispe.png";
+import Img2 from "../../img/search-1.svg";
+import Img3 from "../../img/computer.svg";
+import Img6 from "../../img/ui.svg";
+import Img5 from "../../img/setting.svg";
+import Img4 from "../../img/search-2.svg";
+import Img7 from "../../img/phone.svg";
+import Img8 from "../../img/deployment.svg";
+import Img9 from "../../img/circle.svg";
 import { useState } from "react";
 
 const Applications = () => {
@@ -44,7 +44,7 @@ const Applications = () => {
             </p>
           </div>
           <Row>
-            <div className="col">
+            <div className="col-lg">
               <div
                 className="p-2 mb-3"
                 style={{
@@ -80,7 +80,7 @@ const Applications = () => {
                 <h6 style={{ fontWeight: "700" }}>Coding</h6>
               </div>
             </div>
-            <div className="col">
+            <div className="col-lg">
               <div
                 className="p-2 mb-3"
                 style={{
@@ -152,7 +152,7 @@ const Applications = () => {
                 <h6 style={{ fontWeight: "700" }}>Deployment</h6>
               </div>
             </div>
-            <div className="col">
+            <div className="col-lg">
               <div
                 className="p-2 mb-3"
                 style={{

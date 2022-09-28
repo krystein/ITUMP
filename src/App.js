@@ -5,9 +5,10 @@ import Footer from "./components/Footer";
 import Index from "./components/Index";
 import GlobalStyle from "./globalstyles";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
-import Appointment from "./pages/Appointment";
-import Billing from "./pages/Billing";
-import Congratulations from "./pages/Congratulations";
+import Appointment from "./pages/Pop-up/Appointment";
+import Billing from "./pages/Pop-up/Billing";
+import Congratulations from "./pages/Pop-up/Congratulations";
+// import Dashboard from "./pages/Dashboard";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <Routes>
         <Route exact path="/" element={<Index />}></Route>
+        {/* <Route exact path="/" element={<Dashboard />}></Route> */}
         <Route path="/Support" element={<Appointment />}></Route>
         <Route path="/Billing" element={<Billing />}></Route>
         <Route path="/Congrats" element={<Congratulations />}></Route>

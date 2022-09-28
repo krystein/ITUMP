@@ -76,19 +76,19 @@ const Appointment = ({ setShow, setShown }) => {
               <Row style={{ gap: "10px" }}>
                 <Row className="col" style={{ gap: "20px" }}>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     10:00AM
                   </Button>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     11:00AM
                   </Button>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     12:00PM
@@ -96,19 +96,19 @@ const Appointment = ({ setShow, setShown }) => {
                 </Row>
                 <Row className="col" style={{ gap: "20px" }}>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     1:00PM
                   </Button>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     2:00PM
                   </Button>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     3:00PM
@@ -116,19 +116,19 @@ const Appointment = ({ setShow, setShown }) => {
                 </Row>
                 <Row className="col" style={{ gap: "20px" }}>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     4:00PM
                   </Button>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     5:00PM
                   </Button>
                   <Button
-                    className="btn btn-light btn-outline-danger"
+                    className="btn btn-light btn-outline-primary"
                     style={{ color: "#979797", border: "none" }}
                   >
                     6:00PM

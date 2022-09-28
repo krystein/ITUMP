@@ -1,9 +1,9 @@
 import React from "react";
 import Hero from "./Hero";
 import styled from "styled-components";
-import Section from "./Section";
+import Section from "./section";
 import Project from "./Projects/Projects";
-import Applications from "./Applications";
+import Applications from "./Application";
 import Card from "./Card";
 import Testimonial from "./Testimonial";
 import { AnimationOnScroll } from "react-animation-on-scroll";

@@ -7,7 +7,7 @@ import { menuData } from "../../data/MenuData";
 import { FaBars } from "react-icons/fa";
 import Img1 from "../../img/logo.png";
 import "./navbar.css";
-import Registration from "../../pages/Registration";
+import Registration from "../../pages/Pop-up/Registration";
 
 const Logo = styled.div`
   color: #fff;

@@ -1,0 +1,25 @@
+.cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+.rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+h6 {
+  color: #9ca3ac;
+}
+
+@media screen and (max-width: 800px) {
+  .cols {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .rows {
+    grid-template-columns: 1fr;
+  }
+}
